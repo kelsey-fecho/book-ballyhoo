@@ -11,7 +11,7 @@ Book.create([
     author: "Kevin Kwan",
     desc: "A New Yorker gets a surprise when she spends the summer with her boyfriend in Singapore.",
     url:"https://www.amazon.com/Crazy-Rich-Asians-Trilogy/dp/0345803787?tag=NYTBS-20",
-    list: "ficton"
+    list: "fiction"
   },
   {
     title: "Texas Ranger",
