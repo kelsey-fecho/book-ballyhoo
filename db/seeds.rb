@@ -217,3 +217,26 @@ Book.create([
     list: "nonfiction"
   }
 ])
+
+Comment.create([
+  {
+    comment: "Totally agree, Less is awesome!",
+    author: "Harper Cecelia"
+  },
+  {
+    comment: "Ugh, too many politics on this non-fiction list for me.",
+    author: "Teddy Kevin"
+  },
+  {
+    comment: "Kevin Kwan is a genius.",
+    author: "Natalie Alexandra"
+  },
+  {
+    comment: "Daniel Silva is always a good idea.",
+    author: "Graham Jeffry"
+  },
+  {
+    comment: "I know what I'm reading next now!",
+    author: "Ashton James"
+  }
+  ])
