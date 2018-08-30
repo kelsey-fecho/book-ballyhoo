@@ -13,7 +13,7 @@ export default function booksReducer(state = {fiction: [], nonfiction:[], commen
                                     link: book.url}))
             }
 
-    case 'FETCH_NONFICTION':
+  case 'FETCH_NONFICTION':
     return {
       ...state,
       nonfiction: action.payload.map(book => ({title: book.title,
@@ -24,6 +24,14 @@ export default function booksReducer(state = {fiction: [], nonfiction:[], commen
 
     case 'ADD_COMMENT':
       return Object.assign({}, state, {comments: state.comments.concat(action.comment)})
+
+    case 'FETCH_COMMENTS':
+    console.log(action.payload)
+      return {
+        ...state,
+        comments: action.payload.map(comment => ({comment: comment.comment,
+                                                  author: comment.author}))
+      }
 
     default:
       return state;
