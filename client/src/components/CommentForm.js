@@ -19,7 +19,7 @@ export class CommentForm extends Component {
 
   handleSubmit = e => {
     e.preventDefault()
-    this.props.addComment(this.state)
+    this.props.persistComment(this.state)
     this.setState({
       comment: '',
       author: ''

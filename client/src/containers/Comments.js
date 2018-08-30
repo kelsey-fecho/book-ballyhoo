@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { CommentForm } from '../components/CommentForm'
 import { CommentsList } from '../components/CommentsList'
-import {addComment, fetchComments} from '../actions/commentActions'
+import {persistComment, fetchComments} from '../actions/commentActions'
 
 export class Comments extends Component {
 
@@ -13,7 +13,7 @@ export class Comments extends Component {
   render(){
     return(
       <React.Fragment>
-        <CommentForm addComment={this.props.addComment}/>
+        <CommentForm persistComment={this.props.persistComment}/>
         <CommentsList comments={this.props.comments}/>
       </React.Fragment>
     )
@@ -26,4 +26,4 @@ const mapStateToProps = state => {
   }
 }
 
-export default connect(mapStateToProps, {addComment, fetchComments})(Comments);
+export default connect(mapStateToProps, {persistComment, fetchComments})(Comments);
