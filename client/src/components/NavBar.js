@@ -3,8 +3,7 @@ import {NavLink} from 'react-router-dom'
 import {Container, Row, Col} from 'reactstrap'
 import logo from '../images/Book_Ballyhoo.png'
 
-const NavBar = () => {
-  return (
+const NavBar = () =>
     <Container>
       <Row>
         <Col><NavLink to="/" exact className="nav-link"><img src={logo} width="500" alt="logo"/></NavLink></Col>
@@ -14,7 +13,5 @@ const NavBar = () => {
         <Col sm="4"><NavLink to="/nonfiction" exact className="nav-link">Combined Non-Fiction</NavLink></Col>
       </Row>
     </Container>
-  )
-}
 
 export default NavBar
