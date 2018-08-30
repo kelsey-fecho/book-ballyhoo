@@ -31,14 +31,14 @@ export class CommentForm extends Component {
       <Container>
         <Row>
           <Col md={{ size: 11, offset: 2}} style={{margin: "1em", border: "1px solid #6c757d", padding: "1em"}}>
-            <form onSubmit={this.handleSubmit}>
+            <form onSubmit={this.handleSubmit} id="new_comment">
               <h4 style={{color: '#6c757d'}}>Let Us Know What You Think</h4>
               <div>
-                <input type='text' name='author' id='newauthor'onChange={this.handleChange} value={this.state.author} placeholder="Your Name"/>
+                <input type='text' name='author' id='author'onChange={this.handleChange} value={this.state.author} placeholder="Your Name"/>
               </div>
               <br/>
               <div>
-                <textarea rows='5' cols='80' name='comment' id='newtext' onChange={this.handleChange} value={this.state.comment} placeholder="All Your Thoughts Here"/>
+                <textarea rows='5' cols='80' name='comment' id='comment' onChange={this.handleChange} value={this.state.comment} placeholder="All Your Thoughts Here"/>
               </div>
               <br/>
               <div>
